@@ -1,0 +1,12 @@
+pom.xml
+*.sql
+*jar
+/lib/
+/classes/
+.lein-deps-sum
+*~
+/.sass-cache/
+/resources/private/
+/.lein-plugins/
+/bin/
+/tmp/
