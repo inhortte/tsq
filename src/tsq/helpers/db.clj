@@ -7,7 +7,7 @@
         [somnium.congomongo.config :only [*mongo-config*]]))
 
 (def localhost-mongo-url "mongodb://:@localhost:27017/tsq")
-(def dotcloud-mongo-url "mongodb://inhortte:mustelid@tsqdb-inhortte-data-0.dotcloud.com:29015/tsq")
+
 (defn split-mongo-url [url]
   "Splits typical mongo-url into a map of constituent parts."
   (let [matcher (re-matcher #"^.*://(.*?):(.*?)@(.*?):(\d+)/(.*)$" url)]
