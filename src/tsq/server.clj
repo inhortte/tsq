@@ -9,3 +9,6 @@
     (server/start port {:mode mode
                         :ns 'tsq})))
 
+;; for ring & dotcloud.
+(def handler (server/gen-handler {:mode :dev
+                                  :ns 'tsq}))
